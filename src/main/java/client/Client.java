@@ -36,7 +36,7 @@ public Client(String host, int port) throws UnaccesibleRoutException {
         @Override
         public void run() {
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
-           while (true) { //todo serever status check
+           while (true) {
                 try {
                     String msg = br.readLine();
                     if (msg == null) throw new RuntimeException("Connection with server lost");
